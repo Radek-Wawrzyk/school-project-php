@@ -1,0 +1,183 @@
+//main: main.less
+
+//Scroll bar
+
+*::-webkit-scrollbar {
+  width: 0.5em;
+  height: 10px;
+}
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background: @white;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #272727;
+  outline: 1px solid slategrey;
+}
+
+body {
+  position: relative;
+  top: 0;
+  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+}
+footer {
+  padding: 20px 15px;
+  border-top: @grey-border;
+  background: @white;
+}
+.row {
+  margin-bottom: 50px;
+}
+.main-panel {
+  overflow: auto;
+  overflow-x: hidden;
+  height: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  width: calc(~"100% - 260px");
+  position: relative;
+  float: right;
+  transition: 0.5s;
+  left: 0;
+}
+.panel-content {
+  padding: 30px 15px;
+  background: rgba(203, 203, 210, 0.10);
+  margin-top: 63px;
+}
+.panel-tile {
+  border: @grey-border;
+  box-shadow: @shadow;
+  margin-bottom: 25px;
+}
+.panel-header {
+  padding: 12px 5px;
+  border-bottom: @grey-border;
+  background: @red;
+  color: white;
+  text-align: center;
+}
+.panel-body {
+  padding: 20px 15px;
+}
+.fa-pencil:hover {
+  color: #ffa500;
+}
+.fa-trash-o:hover {
+  color: #ff4d4d;
+}
+
+//Chat
+.chat {
+  padding: 0;
+}
+.panel-chat {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid @light-white;
+  padding: 20px 15px 40px 15px;
+}
+.panel-chat-message {
+  width: auto;
+  background: @light-red;
+  border-radius: 50px;
+  padding: 10px;
+  margin: 5px 0;
+  width: 50%;
+  text-align: center;
+  position: relative;
+}
+.panel-chat-message  span {
+  position: absolute;
+  left: 10px;
+  bottom: -20px;
+  font-size: 10px;
+  color: @grey;
+}
+.panel-chat-message:nth-child(even) {
+  background: @red;
+  margin-left: 50%;
+  color: @white;
+  width: auto;
+}
+.same-message {
+  margin-left: 50%;
+  color: @white;
+  background: @red;
+  margin-top: 20px;
+}
+
+
+
+//Profile
+
+.panel-body img {
+  width: 100%;
+  height: auto;
+}
+
+
+//Shop
+
+.shop-item-box {
+  border: 1px solid @light-white;
+  margin-bottom: 30px;
+  height: 200px;
+  box-shadow: @shadow;
+  transition: 0.4s;
+  position: relative;
+}
+.shop-item-box:hover {
+  background: @red;
+  cursor: pointer;
+  color: @white;
+}
+.shop-item-box h3 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.shop-item-box p {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  text-align: center;
+}
+
+
+// <----- Media Queries -----> \\
+
+@media screen and (max-width: 992px) {
+  .panel-avatar img {
+    width: 200px;
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-panel {
+    width: 100%;
+    float: none;
+  }
+  .panel-content {
+    padding: 30px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .panel-avatar img {
+    width: auto;
+  }
+  .panel-chat-message {
+    width: 80%;
+    margin: 20px 0;
+  }
+  .panel-chat-message:nth-child(even) {
+    margin-left: 20%;
+  }
+}
