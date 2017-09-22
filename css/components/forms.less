@@ -1,0 +1,56 @@
+//main: main.less
+
+form {
+  margin: 25px 0;
+}
+label {
+  font-size: 16px;
+}
+.form-control  {
+  position: relative;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid @light-grey;
+  padding: 14px 6px;
+  box-shadow: none;
+  height: auto;
+  font-size: 16px;
+}
+.form-control:focus {
+  transition: 0;
+  outline: none !important;
+  box-shadow: none;
+  border-color: @light-grey;
+}
+.form-group {
+  position: relative;
+}
+.form-buttons {
+  margin-top: 40px;
+}
+.form-group span {
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background: @red;
+  transition: 0.8s;
+}
+input:focus + span, textarea:focus + span {
+  width: 100%;
+}
+input.form-control:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px @white inset;
+  -webkit-text-fill-color: @grey !important;
+}
+
+//Another form
+
+.form-normal {
+  padding: 20px 15px;
+}
+.form-normal .form-control {
+  border: @grey-border;
+}

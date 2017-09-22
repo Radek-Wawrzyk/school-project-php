@@ -1,0 +1,121 @@
+//main: main.less
+
+.sidebar {
+  width: 260px;
+  max-height: 100%;
+  height: 100%;
+  overflow-y: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  background: @grey;
+  transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
+}
+.sidebar-menu {
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background: @grey;
+  z-index: 1;
+}
+.sidebar-logo {
+  padding: 18px 15px;
+  border-bottom: 1px solid rgba(242, 253, 247, 0.16);
+}
+.sidebar-logo h1 a {
+  color: @white;
+}
+.sidebar-logo a span  {
+  font-size: 24px;
+  color: @red;
+}
+.sidebar-logo h1 a:hover {
+  text-decoration: none;
+}
+.sidebar-nav {
+  list-style-type: none;
+  margin: 25px 0 80px 0;
+  padding: 0;
+  border-top: @grey-border;
+  border-bottom: @grey-border;
+}
+
+//Sidebar menu list
+
+.sidebar-nav li a {
+  display: block;
+  width: 100%;
+  padding: 10px 8px;
+  color: white;
+  transition: 0.5s;
+  border: @grey-border;
+}
+.sidebar-nav li a p {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0;
+}
+.sidebar-nav li a i {
+  display: inline-block;
+  float: left;
+  width: 30px;
+  font-size: 20px;
+  line-height: 30px;
+  margin-right: 15px;
+}
+.sidebar-nav li a:hover, .sidebar-nav li a:focus {
+  background: @light-red;
+  text-decoration: none;
+  border-left: 3px solid @red;
+  color: white;
+}
+.sidebar-nav li a.active {
+  background: @light-red;
+  border-left: 3px solid @red;
+}
+
+//Sidebar footer
+
+.sidebar-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 25px;
+  left: 0;
+  padding: 0 45px;
+}
+.menu-open.sidebar {
+  transform: translateX(0px);
+  z-index: 10;
+}
+.menu-open.toggle-navigation span  {
+  background: @red;
+}
+
+// <----- Media Queries -----> \\
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-260px);
+    top: 63px;
+  }
+  .sidebar-footer {
+    bottom: 68px;
+  }
+}
+
+@media screen and (max-height: 540px) {
+  .sidebar-footer {
+    display: none;
+  }
+  .sidebar-nav {
+    padding-bottom: 20px;
+    border-bottom: 0 ;
+  }
+}
