@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="utf-8">
   <title>Admin panel</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <link rel="stylesheet" href="css/styles.min.css" />
@@ -15,36 +14,34 @@
   <section class="sidebar">
     <div class="sidebar-menu">
       <div class="sidebar-logo">
-        <h1 class="text-center site-header"><a href="index.php" class="link"><span>Mine</span>Serv</a></h1>
+        <h1 class="text-center site-header"><a href="index.php" class="link"><span>Ćwiczenia</span>PHP</a></h1>
       </div>
       <ul class="sidebar-nav">
         <li><a class="active" href="index.php" class="link" >
           <i class="fa fa-newspaper-o" aria-hidden="true"></i>
           <p>Aktualności</p>
         </a></li>
-        <li><a href="shop.php" class="link" >
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-          <p>Sklep</p>
-        </a></li>
-        <li><a href="tickets.php" class="link" >
-          <i class="fa fa-comments-o" aria-hidden="true"></i>
-          <p>Ticket</p>
-        </a></li>
-        <li><a href="block.php" class="link" >
+        <li><a href="delta.php" class="link" >
           <i class="fa fa-lock" aria-hidden="true"></i>
-          <p>Edycja sklepu</p>
+          <p>Delta</p>
         </a></li>
-        <li><a href="stats.php" class="link" >
+        <li><a href="calculator.php" class="link" >
           <i class="fa fa-area-chart" aria-hidden="true"></i>
-          <p>Statystyki</p>
+          <p>Kalkulator</p>
         </a></li>
-        <li><a href="help.php" class="link" >
+        <li><a href="table-operations.php" class="link" >
           <i class="fa fa-question" aria-hidden="true"></i>
-          <p>Pomoc</p>
+          <p>Tablice działania</p>
+        </a></li>
+		<li><a href="table-sort.php" class="link" >
+          <i class="fa fa-question" aria-hidden="true"></i>
+          <p>Tablice sortowanie</p>
         </a></li>
       </ul>
+      </ul>
+	  
       <div class="sidebar-footer">
-        <p class="text-center">© 2017 site by <a href="https://www.facebook.com/radek.wawrzyk" class="link" >Radziu</a> and <a href="https://www.facebook.com/MatisiekPL2" class="link" >Mateusz</a></p>
+        <p class="text-center">© 2017 site by <a href="https://www.facebook.com/radek.wawrzyk" class="link" >Radziu</a></p>
       </div>
     </div>
   </section>
