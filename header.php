@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <title>Admin panel</title>
+  <meta charset="utf-8">
+  <title>Ćwiczenia php</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <link rel="stylesheet" href="css/styles.min.css" />
 </head>
@@ -29,9 +30,9 @@
           <i class="fa fa-area-chart" aria-hidden="true"></i>
           <p>Kalkulator</p>
         </a></li>
-        <li><a href="table-operations.php" class="link" >
+        <li><a href="table-calculator.php" class="link" >
           <i class="fa fa-question" aria-hidden="true"></i>
-          <p>Tablice działania</p>
+          <p>Tablice zadanie 1</p>
         </a></li>
 		<li><a href="table-sort.php" class="link" >
           <i class="fa fa-question" aria-hidden="true"></i>
@@ -39,9 +40,9 @@
         </a></li>
       </ul>
       </ul>
-	  
+
       <div class="sidebar-footer">
-        <p class="text-center">© 2017 site by <a href="https://www.facebook.com/radek.wawrzyk" class="link" >Radziu</a></p>
+        <p class="text-center">© 2017 site by <a href="https://www.facebook.com/radek.wawrzyk" class="link" >Radek Wawrzyk</a></p>
       </div>
     </div>
   </section>

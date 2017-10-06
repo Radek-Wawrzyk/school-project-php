@@ -102,7 +102,7 @@
 			  </tbody>
 			</table>
 		</div>
-			  <button class="btn btn-submit" type="submit" name="pokaz_wyniki" value="Wyniki sprzeda¿y">Poka¿ mi swoje towary xD</button>
+			  <button class="btn btn-submit" type="submit" name="pokaz_wyniki" value="Wyniki sprzedaï¿½y">Pokaï¿½ mi swoje towary xD</button>
 			</form>
         </div>
       </div>

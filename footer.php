@@ -1,6 +1,6 @@
 
     <footer>
-      <p class="text-right">© 2017 site by <a href="https://www.facebook.com/radek.wawrzyk">Radziu</a> and <a href="https://www.facebook.com/MatisiekPL2">Mateusz</a></p>
+      <p class="text-right">© 2017 site by <a href="https://www.facebook.com/radek.wawrzyk">Radek Wawrzyk</a></p>
     </footer>
   </main>
 
