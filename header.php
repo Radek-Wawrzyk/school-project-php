@@ -34,10 +34,15 @@
           <i class="fa fa-question" aria-hidden="true"></i>
           <p>Tablice zadanie 1</p>
         </a></li>
-		<li><a href="table-sort.php" class="link" >
+        <li><a href="table-calculator-2.php" class="link" >
+          <i class="fa fa-question" aria-hidden="true"></i>
+          <p>Tablice zadanie 2</p>
+        </a></li>
+	      <li><a href="table-sort.php" class="link" >
           <i class="fa fa-question" aria-hidden="true"></i>
           <p>Tablice sortowanie</p>
         </a></li>
+
       </ul>
       </ul>
 

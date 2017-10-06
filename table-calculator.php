@@ -5,7 +5,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
-          <form class="form-normal" action="wyniki.php" method="post">
+          <form class="form-normal" action="result.php" method="post">
 		  <div class="table-responsive">
 			  <table class="table">
 			    <thead>
