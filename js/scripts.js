@@ -29,10 +29,10 @@
   		var tab_id = $(this).attr('data-tab');
 
   		$('.tabs li').removeClass('active');
-  		$('.tab-content').removeClass('active');
+  		$('.tab-content').hide().fadeOut(600);
 
   		$(this).addClass('active');
-  		$("#"+tab_id).addClass('active');
+  		$("#"+tab_id).fadeIn(600);
   	});
   });
 
